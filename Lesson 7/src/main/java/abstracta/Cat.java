@@ -1,0 +1,8 @@
+package abstracta;
+
+public class Cat extends Pet {
+    @Override
+    public void voice() {
+        System.out.println("Мяу-Мяу");
+    }
+}
