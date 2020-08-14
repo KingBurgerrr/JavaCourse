@@ -1,33 +1,36 @@
 package Lesson7;
 
-import java.util.Random;
-
 public class Su27 implements Danger {
+    Su27() {
+        Pilot plt = new Pilot();
+        Plane pln = new Plane() {
+            @Override
+            protected int on(int min, int max) {
+                return on;
+            }
 
-    public String forsage(int f) {
-        return this.forsage(f);
-    }
+            public void gdown() {
 
-    public String stels(String on) {
-        return stels(on);
+            }
+        };
+        pln.gdown(3, 5, 8);
+        plt.Pilot();
+        pln.Plane();
     }
 
     public String bomb(String b) {
-        return bomb(b);
-    }
-
-    public String bomb() {
         return null;
     }
 
-    public String forsage() {
+    public String forsage(String fors) {
         return null;
     }
 
-    public String stels() {
+    public String fuel(String f) {
         return null;
     }
-    public Su27() {
-        return Plane.
+
+    public String stels(String s) {
+        return null;
     }
 }

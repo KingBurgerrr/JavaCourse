@@ -1,10 +1,10 @@
 package Lesson7;
 
 public class Pilot {
-    double up = Math.random() + 20;
-    double down = Math.random() + 20;
-    double left = Math.random() + 20;
-    double right = Math.random() + 20;
+    double up = Math.random() + 30;
+    double down = Math.random() + 30;
+    double left = Math.random() + 30;
+    double right = Math.random() + 30;
 
     public void setUp() {
         this.up = up;

@@ -1,29 +1,46 @@
 package Lesson7;
 
-import java.util.Random;
-
 public abstract class Plane {
-   public void setStartEngine(String on) {
-        for(double i = 20.88; i < 0.1; i--){
-            System.out.println("Залишилось часу: "+ i);
-        }
-       Random fuel = new Random(1000);
-       System.out.println("паливо: " + fuel);
-    }
-      public void fuel() {
-        Random fuel = new Random(1000);
-        System.out.println("паливо: " + fuel);
-       }
-    public static void GDown() {
-       int lenght = 12;
-       int wight = 5;
-       int mass = 7;
-    }
-    void GDown(int lenght, int wight, int mass) {
-        System.out.println("Ліиак йде на посадку! " + lenght + wight + mass + "тон");
-    }
-    abstract void setLenght(int lenght);
-    abstract void setWight(int wight);
-    abstract void setMass(int mass);
+    int min = 20;
+    int max = 88;
+    int on = (int) ((Math.random()* max) + min);
 
+    public void Plane() {
+        System.out.println("Двигун: " + on + "...");
+    }
+    int wight;
+    int lenght;
+    int mass;
+
+    public void setLenght(int lenght) {
+        this.lenght = lenght;
+    }
+
+    public void setMass(int mass) {
+        this.mass = mass;
+    }
+
+    public int getWight() {
+        return wight;
+    }
+
+    public int getLenght() {
+        return lenght;
+    }
+
+    public int getMass() {
+        return mass;
+    }
+
+    public void setWight(int wight) {
+        this.wight = wight;
+    }
+
+    public void gdown(int wight, int lenght, int mass) {
+        System.out.println("Йдемо на посадуц: " + "висота" + wight + "Довжина: " + lenght + "Масса: " + mass);
+    }
+
+    protected abstract int on(int min, int max);
+
+    public abstract void gdown();
 }
