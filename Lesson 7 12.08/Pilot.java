@@ -1,5 +1,7 @@
 package Lesson7;
 
+import java.util.Random;
+
 public class Pilot {
     double up = Math.random() + 30;
     double down = Math.random() + 30;
