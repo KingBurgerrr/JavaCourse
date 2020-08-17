@@ -5,17 +5,17 @@ public class Odd {
     public static void main(String[] args) throws IOException {
         System.out.println("Ііедіть два числа, які додадуться: ");
         Scanner scanner = new Scanner(System.in);
+        try {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        while (true ){
-            try {
+        for (;; ){
                 System.out.println("Введіть перше значення: ");
                 System.out.println("Введіть друге значення: ");
                 System.out.println("Сума: " + (a + b));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            //System.out.println("Ви ввели не вірне число!");
+                break;
+        }
+        } catch (Exception e) {
+            System.out.println("Введене не правельне число");
         }
     }
 }
